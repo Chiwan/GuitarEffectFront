@@ -23,9 +23,13 @@ angular.module('scotchApp', ['ngRoute'])
             templateUrl: 'app/login/login.html',
             controller: 'LoginController'
         })
+        .when('/profile',{
+            templateUrl: 'app/profile/profile.html',
+            controller: 'ProfileController'
+        })
         .otherwise({ redirectTo: '/login' });
-
     });
+
 
 
 
